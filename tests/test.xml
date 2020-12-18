@@ -1,5 +1,7 @@
+<?xml version = "1.0"?>
 <person>
 	<name>Jeff</name>
+	<!-- This is a comment -->
 	<date>01.01.2020</date>
 	<notes>
 		<note>Hello World</note>
