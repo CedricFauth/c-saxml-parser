@@ -21,4 +21,6 @@ int main(void) {
     handler.ctx = NULL;
 
     read_xml_document("test.xml", &handler);
+
+    printf("Hello World\n");
 }

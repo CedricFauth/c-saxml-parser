@@ -1,9 +1,6 @@
 #ifndef SAXML_C
 #define SAXML_C
 
-#include <stdio.h>
-#include <stdbool.h>
-
 typedef void (*doc_callback)(void *ctx);
 typedef void (*elem_callback)(char *value,char **args, void *ctx);
 typedef void (*char_callback)(char *value, void *ctx);
