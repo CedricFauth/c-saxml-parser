@@ -1,5 +1,5 @@
 CXX = gcc
-CXXFLAGS = -Wall -Wextra -pedantic -std=c99 -Iinclude
+CXXFLAGS = -Wall -pedantic -std=c99 -Iinclude
 
 all: test clean run
 
