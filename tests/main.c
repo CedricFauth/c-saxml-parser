@@ -12,7 +12,7 @@ void end_elem(char *key, char **args, void *ctx) { }
 void character(char *key, void *ctx) { }
 
 int main(void) {
-	xmlhandler handler;
+    xmlhandler handler;
     handler.start_doc_handler = &start_doc;
     handler.end_doc_handler = &end_doc;
     handler.start_elem_handler = &start_elem;
