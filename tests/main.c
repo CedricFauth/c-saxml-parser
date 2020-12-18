@@ -20,7 +20,7 @@ int main(void) {
     handler.character_handler = &character;
     handler.ctx = NULL;
 
-    read_xml_document("test.xml", &handler);
+    read_xml_document("tests/test.xml", &handler);
 
     printf("Hello World\n");
 }
