@@ -9,9 +9,19 @@ char *read_file(char *path) {
         perror("open file failed");
         return NULL;
     }
-    fseek(fp, 0L, SEEK_END);
+    if (fseek(fp, 0L, SEEK_END) == -1) {
+		perror("fseek failed");
+		return NULL;
+	}
     long length = ftell(fp);
-    fseek(fp, 0L, SEEK_SET);
+	if (length == -1L) {
+		perror("ftell failed");
+		return NULL;
+	}
+    if (fseek(fp, 0L, SEEK_SET) == -1) {
+		perror("fseek failed");
+		return NULL;
+	}
     char *data = malloc(sizeof(char) * (length+1));
     if (!data) {
         fprintf(stderr, "allocation failed: not enough memory %lu", length);
